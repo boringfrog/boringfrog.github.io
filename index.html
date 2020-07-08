@@ -13,7 +13,7 @@
     <style media="screen">
     h1 {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: Inter;
       font-size: 3rem;
       font-weight: 500;
       line-height: 1.5;
@@ -23,7 +23,7 @@
     }
     body {
         margin: 0;
-        font-family: 'Inter', sans-serif;
+        font-family: Inter;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -31,14 +31,37 @@
         text-align: left;
         background-color: #fff;
     }
-   .newclass {
+    .newclass {
       margin: 0;
       background-color: #e9ecef;
       text-align: center;
     }
-   hr {
+    hr {
       width: inherit;
       border-color: black;
+    }
+    .video-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .video-container video {
+      /* Make video to at least 100% wide and tall */
+      min-width: 100%;
+      min-height: 100%;
+
+      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      width: auto;
+      height: auto;
+
+      /* Center the video */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
     </style>
     <title>Bootstrap</title>
@@ -49,7 +72,7 @@
         <h1>Classification of Animals</h1>
       </div>
       <div class="jumbotron">
-        <div class="container mr-3">
+        <div class="container newclass mx-auto">
           <h3>Classifications of 6 popular animals:</h3>
           <hr>
         </div>
@@ -62,8 +85,8 @@
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Equus caballus</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Equus</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Equidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Equus</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Equidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/Horse" class="btn btn-success">Learn More</a>
@@ -77,8 +100,8 @@
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Equus zebra</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Equus</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Equidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Equus</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Equidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/Zebra" class="btn btn-success">Learn More</a>
@@ -92,8 +115,8 @@
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Panthera leo</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Panthera</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Felidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Panthera</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Felidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/African_lion" class="btn btn-success">Learn More</a>
@@ -107,47 +130,51 @@
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Elephas maximus indicus</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Elephas</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Elephantidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Elephas</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Elephantidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/Indian_elephant" class="btn btn-success">Learn More</a>
              </div>
           </div>
           <div class="card text-black mx-auto mt-3" style="width: 24rem;">
-            <img src="https://images.pexels.com/photos/248337/pexels-photo-248337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="#">
+            <img src="https://images.pexels.com/photos/248337/pexels-photo-248337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="#">
              <div class="card-body">
                 <h5 class="card-title" style="text-align: center;">Cow</h5>
                 <p class="card-text"></p>
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Bos taurus</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Bos</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Bovidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Bos</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Bovidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/Cattle" class="btn btn-success">Learn More</a>
              </div>
           </div>
           <div class="card text-black mx-auto mt-3" style="width: 24rem;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Olive_baboon_Ngorongoro.jpg/800px-Olive_baboon_Ngorongoro.jpg" class="card-img-top" alt="#">
+            <img src="https://images.pexels.com/photos/3839695/pexels-photo-3839695.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="#">
              <div class="card-body">
                 <h5 class="card-title" style="text-align: center;">Baboon</h5>
                 <p class="card-text"></p>
              </div>
              <ul class="list-group list-group-flush">
                  <li class="list-group-item"><b>Scientific Name: </b><i>Papio</i></li>
-                  <li class="list-group-item"><b>Genus: </b><i>Papio</i></li>
-                  <li class="list-group-item"><b>Family: </b><i>Cercopithecidae</i></li>
+                 <li class="list-group-item"><b>Genus: </b><i>Papio</i></li>
+                 <li class="list-group-item"><b>Family: </b><i>Cercopithecidae</i></li>
              </ul>
              <div class="card-body">
                <a href="https://en.wikipedia.org/wiki/Baboon" class="btn btn-success">Learn More</a>
              </div>
           </div>
+          <div class="container newclass mx-auto">
+            <hr>
+            <p><b>The favicon of this site is a Hindu symbol of peace and is not meant to convey any other message, either
+            intentionally or unintentionally.</b></p>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
