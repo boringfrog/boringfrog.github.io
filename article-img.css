@@ -1,0 +1,19 @@
+img.s1, img.s2, img.s3, img.s4 {
+    width: 100%;
+}
+
+.s1 {
+    grid-column: 4/5;
+}
+
+.s2 {
+    grid-column: 3/6;
+}
+
+.s3 {
+    grid-column: 2/7;
+}
+
+.s4 {
+    grid-column: 1/8;
+}

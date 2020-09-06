@@ -1,0 +1,41 @@
+@media (max-width: 8.5in) { :root { font-size: 18px; } } 
+@media (max-width: 5in) { :root { font-size: 16px; } } 
+
+h1   { 
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+h2   { 
+    font-weight: 300;
+    font-family: "Bree Serif", serif;
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #444444;
+}
+time { 
+    font: 0.9rem "Inter"; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+h3   { 
+    font-family: Inter;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #7b1fa2;
+    font-size: 1.5rem;
+}
+p    { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Roboto Slab", serif;
+}
+
+nav {
+    font-family: Roboto;
+    font-size: 80%;
+}
