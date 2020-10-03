@@ -10,14 +10,14 @@ h1   {
 }
 h2   { 
     font-weight: 300;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     color: #444444;
 }
 time { 
-    font: 0.9rem "Inter"; 
+    font: 0.9rem "Roboto"; 
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: gray;
