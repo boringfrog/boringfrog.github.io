@@ -14,36 +14,39 @@
     <link rel="stylesheet" href="/assets/submain.css">
     <link rel="stylesheet" href="/assets/article.css">
     <link rel="stylesheet" href="/assets/article-img.css">
+    <script src="/assets/navbar.js"></script>
     <title>BoringFrog</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Uzbl.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars text-white"></i>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Popular</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Tech</a>
-                <a class="dropdown-item" href="#">Satire</a>
-                <a class="dropdown-item" href="#">Arts</a>
-              </div>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Address Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Components</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
     <article>
         <h1>Want to be stupid, friendless and unproductive? Sleep less.</h1>
         <h2>This is an article that X, Y, and Z (Class XI, 2018) jointly wrote, exhorting you to sleep at least 9 hours every night.</h2>
